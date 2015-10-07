@@ -6,7 +6,9 @@
 [Bb]uild
 [Ll]ibrary/
 sysinfo.txt
-Library
+
+ProjectSettings.asset
+ProjectVersion.txt
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
