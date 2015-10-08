@@ -85,24 +85,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &14662947 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 122886, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
-  m_PrefabInternal: {fileID: 1040719438}
---- !u!68 &14662950
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 14662947}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 4, y: -3}
-  m_Points:
-  - {x: -14.6073542, y: -6.42413616}
-  - {x: -14.6558971, y: 10.5720863}
 --- !u!4 &186461125 stripped
 Transform:
   m_PrefabParentObject: {fileID: 474966, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
@@ -146,13 +128,38 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 21248290, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
-      propertyPath: m_SortingLayerID
-      value: 168289909
+    - target: {fileID: 5026892, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+      propertyPath: m_Constraints
+      value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6139420, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5026892, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &379393352 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 176514, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+  m_PrefabInternal: {fileID: 330240926}
+--- !u!50 &379393353
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379393352}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &457494499
 Prefab:
   m_ObjectHideFlags: 0
@@ -190,6 +197,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474966, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091192, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411024, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
+      propertyPath: m_MaxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091192, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -321,10 +340,6 @@ Prefab:
     - target: {fileID: 455932, guid: 0ebd73b5bdf104ccf82094cadf320953, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 455932, guid: 0ebd73b5bdf104ccf82094cadf320953, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.08077955
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ebd73b5bdf104ccf82094cadf320953, type: 2}

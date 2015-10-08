@@ -110,5 +110,17 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
-    }
+
+	
+		//Custom code
+
+		void OnCollisionEnter2D (Collision2D col)
+		{
+			switch (col.gameObject.name)
+			{
+				case "Castle": Debug.Log("HIT THE CASTLE"); break;
+			}
+		}
+		
+	}
 }
