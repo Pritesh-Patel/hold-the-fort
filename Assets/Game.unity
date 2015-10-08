@@ -128,38 +128,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5026892, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
-      propertyPath: m_Constraints
-      value: 3
+    - target: {fileID: 6139420, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+      propertyPath: m_Offset.x
+      value: 1.13381112
       objectReference: {fileID: 0}
     - target: {fileID: 6139420, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Offset.y
+      value: 1.24999964
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5026892, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+    - target: {fileID: 6139420, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+      propertyPath: m_Size.x
+      value: 2.73237205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139420, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
+      propertyPath: m_Size.y
+      value: 2.49999928
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &379393352 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 176514, guid: 52a12f3371a0c48b28c9c69690a9ade5, type: 2}
-  m_PrefabInternal: {fileID: 330240926}
---- !u!50 &379393353
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 379393352}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &457494499
 Prefab:
   m_ObjectHideFlags: 0
