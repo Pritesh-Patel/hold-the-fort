@@ -123,7 +123,8 @@ public class PlatformerCharacter2D : Spawnable
 	#region implemented abstract members of Spawnable
 	public override void Spawned ()
 	{
-		throw new NotImplementedException ();
+		m_MaxSpeed = 3;
+		
 	}
 	#endregion
 }

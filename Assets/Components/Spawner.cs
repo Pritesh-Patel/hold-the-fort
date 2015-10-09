@@ -8,8 +8,9 @@ public class Spawner : MonoBehaviour {
 	public Spawnable spawn;
 	public GameObject spawnPoint;
 	public Transform spawnTransform;
+	private bool spawning = false;
 
-	private float spawnInterval = 1.0f;
+	public float spawnInterval;
 
 	void Start () {
 		timer = GetComponent<Timer> ();
@@ -21,16 +22,17 @@ public class Spawner : MonoBehaviour {
 	void Update () {
 
 
-		if (timer.currTime > spawnInterval) {
-			Debug.Log ("Spawning");
-			Spawnable spawned = Instantiate (spawn, spawnTransform.position, Quaternion.identity) as Spawnable;
-			spawned.Spawned ();
-			timer.ResetTimer ();
-			if (spawned == null)
-				Debug.Log ("Shit its null");
-		} else {
-			Debug.Log ("Well, shit.");
+		if (!spawning) {
+			StartCoroutine(Spawn());
 		}
 	
+	}
+
+	IEnumerator Spawn() {
+		spawning = true;
+		Spawnable spawned = Instantiate (spawn, spawnTransform.position, Quaternion.identity) as Spawnable;
+		spawned.Spawned ();
+		yield return new WaitForSeconds(spawnInterval);
+		spawning = false;
 	}
 }
