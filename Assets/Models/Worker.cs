@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Workers : MonoBehaviour {
+public class Worker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
