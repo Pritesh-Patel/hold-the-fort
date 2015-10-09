@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour {
 	private Timer timer;
 	public Spawnable spawn;
 	public GameObject spawnPoint;
-	public Transform spawnTransform;
+	private Transform spawnTransform;
 	private bool spawning = false;
 
 	public float spawnInterval;
