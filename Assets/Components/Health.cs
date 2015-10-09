@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HealthManager : MonoBehaviour {
+public class Health : MonoBehaviour {
 
 	public int maxHealth;
 	public int currentHealth;
