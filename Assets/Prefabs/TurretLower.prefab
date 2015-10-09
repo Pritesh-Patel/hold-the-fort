@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 401608}
   - 212: {fileID: 21223168}
   - 61: {fileID: 6115278}
+  - 114: {fileID: 11448656}
   m_Layer: 0
   m_Name: TurretLower
   m_TagString: Untagged
@@ -42,6 +43,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 3, y: 6}
+--- !u!114 &11448656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31042b3923863c74c89651827ef8f44b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!212 &21223168
 SpriteRenderer:
   m_ObjectHideFlags: 1
