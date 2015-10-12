@@ -44,8 +44,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   maxTopAngle: 100
-  minBotAngle: 250
+  minBotAngle: -150
+  projectileDistance: -1
   showDebugAngles: 1
+  showDebugAim: 1
+  aiming: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
