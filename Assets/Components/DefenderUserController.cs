@@ -47,7 +47,6 @@ public class DefenderUserController : MonoBehaviour {
 			float degrees = radians * (180/Mathf.PI);
 			//if (degrees < maxTopAngle) degrees = maxTopAngle;
 			//if (degrees < minBotAngle) degrees = minBotAngle;
-			Debug.Log(degrees);
 			def.transform.localRotation = Quaternion.Euler(0, 0, degrees);
 			if (showDebugAim)
 			{

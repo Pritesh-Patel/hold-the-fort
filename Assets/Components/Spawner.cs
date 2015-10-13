@@ -13,9 +13,9 @@ public class Spawner : MonoBehaviour {
 	public float spawnInterval;
 
 	void Start () {
-		timer = GetComponent<Timer> ();
+		timer = GetComponent<Timer>();
 		spawnTransform = spawnPoint.transform;
-		timer.StartTimer (0);
+		timer.StartTimer(0);
 	}
 	
 	// Update is called once per frame

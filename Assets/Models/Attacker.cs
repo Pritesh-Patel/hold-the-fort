@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
 
 public class Attacker : Spawnable
 {
@@ -11,8 +12,12 @@ public class Attacker : Spawnable
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	private Animator m_Anim;            // Reference to the player's animator component.
 	private Rigidbody2D m_Rigidbody2D;
-	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private int damageDone;
+	
+	private bool attacking = false;
+
+	private float attackInterval = 2;
+	private int damageAmount = 5;
 
 	private void Awake()
 	{
@@ -21,8 +26,7 @@ public class Attacker : Spawnable
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 	}
-	
-	
+		
 	private void FixedUpdate()
 	{
 		m_Grounded = false;
@@ -48,30 +52,22 @@ public class Attacker : Spawnable
 		m_Anim.SetFloat("Speed", Mathf.Abs(move));
 		// Move the character
 		m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
-		// If the input is moving the player right and the player is facing left...
-		if (move > 0 && !m_FacingRight) Flip();
 	}
-	
-	
-	private void Flip()
-	{
-		// Switch the way the player is labelled as facing.
-		m_FacingRight = !m_FacingRight;
-		
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
-	}
-	
-	
-	//Custom code
-	
+
+
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		switch (col.gameObject.tag)
 		{
-		case "Turret": HitTurret(col); break;
+		case "Turret": StartCoroutine(HitTurret(col.gameObject)); break;
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D col)
+	{
+		switch (col.gameObject.tag)
+		{
+		case "Turret": this.attacking = false; break;
 		}
 	}
 	
@@ -83,12 +79,14 @@ public class Attacker : Spawnable
 	}
 	#endregion
 	
-	private void HitTurret(Collision2D other) {
-		Health turret = other.gameObject.GetComponent<Health>();
-		if (turret.currentHealth <= 0) {
-			Debug.Log ("Dead");
-		} else {
-			turret.TakeDamage (5);
+	IEnumerator HitTurret(GameObject turret) {
+		Debug.Log ("Hit turret");
+		this.attacking = true;
+		while(this.attacking) {
+			Debug.Log ("inside loop");
+			Health health = turret.GetComponent<Health>();
+			health.TakeDamage(damageAmount);
+			yield return new WaitForSeconds(attackInterval);
 		}
 	}
 

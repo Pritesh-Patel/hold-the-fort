@@ -2,34 +2,24 @@
 using System.Collections;
 
 public class Timer : MonoBehaviour {
-
-	// Use this for initialization
-
+	
 	public float currTime = 0;
 
 	private bool started = false;
 
-
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-		if (started)
-			currTime += Time.time;
+	void Update () {	
+		if (started) currTime += Time.time;
 	}
 
-	public void StartTimer(int starttime)
+	public void StartTimer(int startTime)
 	{
-		currTime = starttime;
+		currTime = startTime;
 		started = true;
 	}
 
-	public void PauseTimer(bool pause)
+	public void ToggleTimer(bool toggle)
 	{
-		started = pause;
+		started = toggle;
 	}
 
 	public void ResetTimer()
