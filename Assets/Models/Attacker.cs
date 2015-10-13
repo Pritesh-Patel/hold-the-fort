@@ -26,6 +26,15 @@ public class Attacker : Spawnable
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 	}
+
+	void Update () {
+		Health health = gameObject.GetComponent<Health>();
+		if (health.currentHealth <= 0) {
+			Debug.Log ("Attacker dead");
+			//Add coins to GameController
+			Destroy(gameObject);
+		}
+	}
 		
 	private void FixedUpdate()
 	{
@@ -59,7 +68,7 @@ public class Attacker : Spawnable
 	{
 		switch (col.gameObject.tag)
 		{
-		case "Turret": StartCoroutine(HitTurret(col.gameObject)); break;
+			case "Turret": StartCoroutine(HitTurret(col.gameObject)); break;
 		}
 	}
 
@@ -67,7 +76,7 @@ public class Attacker : Spawnable
 	{
 		switch (col.gameObject.tag)
 		{
-		case "Turret": this.attacking = false; break;
+			case "Turret": this.attacking = false; break;
 		}
 	}
 	
@@ -75,15 +84,15 @@ public class Attacker : Spawnable
 	public override void Spawned ()
 	{
 		m_MaxSpeed = 3;
-		
 	}
+
 	#endregion
 	
 	IEnumerator HitTurret(GameObject turret) {
 		Debug.Log ("Hit turret");
 		this.attacking = true;
 		while(this.attacking) {
-			Debug.Log ("inside loop");
+			if(!turret) break;
 			Health health = turret.GetComponent<Health>();
 			health.TakeDamage(damageAmount);
 			yield return new WaitForSeconds(attackInterval);
