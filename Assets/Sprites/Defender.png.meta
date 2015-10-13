@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 3bb2667e88c98482da5a83e013ae01f0
+timeCreated: 1444758264
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Defender_0
+    21300002: Defender_1
+    21300004: Defender_2
+    21300006: Defender_3
+    21300008: Defender_4
+    21300010: Defender_5
+    21300012: Defender_6
+    21300014: Defender_7
+    21300016: Defender_8
+    21300018: Defender_9
+    21300020: Defender_10
+    21300022: Defender_11
+    21300024: Defender_12
+    21300026: Defender_13
+    21300028: Defender_14
+    21300030: Defender_15
+    21300032: Defender_16
+    21300034: Defender_17
+    21300036: Defender_18
+    21300038: Defender_19
+    21300040: Defender_20
+    21300042: Defender_21
+    21300044: Defender_22
+    21300046: Defender_23
+    21300048: Defender_24
+    21300050: Defender_25
+    21300052: Defender_26
+    21300054: Defender_27
+    21300056: Defender_28
+    21300058: Defender_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Defender_0
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1784
+        width: 89
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1785
+        width: 92
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_2
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1785
+        width: 92
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_3
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1784
+        width: 90
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_4
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1784
+        width: 88
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_5
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1785
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_6
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1785
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1510
+        width: 89
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1510
+        width: 89
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_9
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1510
+        width: 91
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1510
+        width: 89
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_11
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1510
+        width: 89
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_12
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1510
+        width: 91
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_13
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1510
+        width: 90
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1235
+        width: 89
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1235
+        width: 89
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_16
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1235
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_17
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1235
+        width: 89
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_18
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1235
+        width: 89
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_19
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1235
+        width: 91
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_20
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1235
+        width: 90
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 960
+        width: 92
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_22
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 960
+        width: 87
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_23
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 960
+        width: 87
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_24
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 960
+        width: 89
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_25
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 960
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_26
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 960
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_27
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 960
+        width: 88
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_28
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 684
+        width: 89
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Defender_29
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 684
+        width: 87
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
