@@ -326,8 +326,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   finalTurret: 0
 --- !u!1001 &1019750972
 Prefab:
@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   finalTurret: 1
 --- !u!1001 &1201593415
 Prefab:
@@ -542,6 +542,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11494966, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
   m_IsPrefabParent: 0
@@ -608,8 +612,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   finalTurret: 0
 --- !u!1001 &1971677983
 Prefab:
@@ -650,6 +654,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11469476, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
   m_IsPrefabParent: 0
