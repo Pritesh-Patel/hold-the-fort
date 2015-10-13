@@ -89,5 +89,4 @@ public class Attacker : Spawnable
 			yield return new WaitForSeconds(attackInterval);
 		}
 	}
-
 }
