@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 
-	// Use this for initialization
 	private Timer timer;
 	public Spawnable spawn;
 	public GameObject spawnPoint;
@@ -20,12 +19,9 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
 		if (!spawning) {
 			StartCoroutine(Spawn());
 		}
-	
 	}
 
 	IEnumerator Spawn() {

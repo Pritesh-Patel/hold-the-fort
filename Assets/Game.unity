@@ -313,6 +313,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1da5dd89261d9440b84b20cdc2dd3a28, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &952247757 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 185998, guid: 80aa45463be064c4988f8f2f6d15f5b4, type: 2}
+  m_PrefabInternal: {fileID: 1201593415}
+--- !u!114 &952247758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952247757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 0
 --- !u!1001 &1019750972
 Prefab:
   m_ObjectHideFlags: 0
@@ -421,6 +437,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1128394286 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189444, guid: 04cfcda906d234a97b9fba1c8def2ad6, type: 2}
+  m_PrefabInternal: {fileID: 877031911}
+--- !u!114 &1128394287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128394286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 1
 --- !u!1001 &1201593415
 Prefab:
   m_ObjectHideFlags: 0
@@ -563,6 +595,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beda3c28f6e434aec8f5cb8c62339585, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1811134186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 126814, guid: 34753fa346f45412d863df668179acf5, type: 2}
+  m_PrefabInternal: {fileID: 1019750972}
+--- !u!114 &1811134187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811134186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 0
 --- !u!1001 &1971677983
 Prefab:
   m_ObjectHideFlags: 0
