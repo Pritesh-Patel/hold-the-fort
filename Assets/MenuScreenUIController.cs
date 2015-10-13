@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ButtonController : MonoBehaviour 
+public class MenuScreenUIController : MonoBehaviour 
 {	
 	public void redirectToScene(string sceneName)
 	{
