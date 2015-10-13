@@ -165,7 +165,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492649713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.8800001, y: -1.37, z: 0}
+  m_LocalPosition: {x: -11.8800001, y: -3.0999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -212,6 +212,10 @@ Prefab:
     - target: {fileID: 496762, guid: 04cfcda906d234a97b9fba1c8def2ad6, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189444, guid: 04cfcda906d234a97b9fba1c8def2ad6, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04cfcda906d234a97b9fba1c8def2ad6, type: 2}
@@ -262,7 +266,7 @@ Prefab:
     - target: {fileID: 11419136, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
       propertyPath: spawn
       value: 
-      objectReference: {fileID: 11411024, guid: 4925fe9bcf1594ef0ab309bcf348cc8b,
+      objectReference: {fileID: 11430360, guid: 4925fe9bcf1594ef0ab309bcf348cc8b,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
@@ -309,6 +313,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1da5dd89261d9440b84b20cdc2dd3a28, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &952247757 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 185998, guid: 80aa45463be064c4988f8f2f6d15f5b4, type: 2}
+  m_PrefabInternal: {fileID: 1201593415}
+--- !u!114 &952247758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952247757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 0
 --- !u!1001 &1019750972
 Prefab:
   m_ObjectHideFlags: 0
@@ -347,6 +367,18 @@ Prefab:
     - target: {fileID: 401608, guid: 34753fa346f45412d863df668179acf5, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 126814, guid: 34753fa346f45412d863df668179acf5, type: 2}
+      propertyPath: m_TagString
+      value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115278, guid: 34753fa346f45412d863df668179acf5, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126814, guid: 34753fa346f45412d863df668179acf5, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34753fa346f45412d863df668179acf5, type: 2}
@@ -398,9 +430,29 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.00998783
       objectReference: {fileID: 0}
+    - target: {fileID: 6833486, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1128394286 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189444, guid: 04cfcda906d234a97b9fba1c8def2ad6, type: 2}
+  m_PrefabInternal: {fileID: 877031911}
+--- !u!114 &1128394287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128394286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 1
 --- !u!1001 &1201593415
 Prefab:
   m_ObjectHideFlags: 0
@@ -439,6 +491,10 @@ Prefab:
     - target: {fileID: 403668, guid: 80aa45463be064c4988f8f2f6d15f5b4, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 185998, guid: 80aa45463be064c4988f8f2f6d15f5b4, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80aa45463be064c4988f8f2f6d15f5b4, type: 2}
@@ -486,10 +542,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 11494966, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
   m_IsPrefabParent: 0
@@ -543,6 +595,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beda3c28f6e434aec8f5cb8c62339585, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1811134186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 126814, guid: 34753fa346f45412d863df668179acf5, type: 2}
+  m_PrefabInternal: {fileID: 1019750972}
+--- !u!114 &1811134187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811134186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 0
 --- !u!1001 &1971677983
 Prefab:
   m_ObjectHideFlags: 0
@@ -582,10 +650,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11469476, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
   m_IsPrefabParent: 0

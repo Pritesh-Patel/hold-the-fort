@@ -11,23 +11,15 @@ public class Health : MonoBehaviour {
 		currentHealth = maxHealth;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	
 	public void TakeDamage(int dmg)
 	{
-		currentHealth -= dmg;
+		if(currentHealth - dmg < 0) currentHealth = 0;
+		else currentHealth -= dmg;
 	}
 	
 	public void AddHealth(int health)
 	{
-		currentHealth += health;
-		if (currentHealth > maxHealth) 
-		{
-			currentHealth = maxHealth;
-		}
-		
+		if (currentHealth > maxHealth) currentHealth = maxHealth;
+		else currentHealth += health;
 	}
 }

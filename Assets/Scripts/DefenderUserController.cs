@@ -6,37 +6,33 @@ public class DefenderUserController : MonoBehaviour {
 
 	// Use this for initialization
 	public List<GameObject> defenders;
-	public float maxTopAngle;
-	public float minBotAngle;
-	public float projectileDistance;
-	public bool showDebugAngles;
-	public bool showDebugAim;
-	public bool aiming = true;
-
-	private Quaternion upper;
-	private Quaternion lower;
+	public float 			maxTopAngle;
+	public float 			minBotAngle;
+	public float 			projectileDistance;
+	public bool 			showDebugAngles;
+	public bool 			showDebugAim;
+	public bool 			aiming = true;
+	private Quaternion 		upper;
+	private Quaternion 		lower;
 
 	void Start () {
-
 		upper = Quaternion.Euler (0, 0, maxTopAngle);
 		lower = Quaternion.Euler (0, 0, minBotAngle);
-	
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+	// Update is called once per frame
+	void Update ()
+	{
 		if (aiming) {
 			AimAtMouse();
 		}
+
 		if (Input.GetMouseButtonDown (0)) {
 			foreach(GameObject go in defenders)
 			{
 				go.GetComponent<Defender>().Fire(go.transform.rotation);
 			}
 		}
-
-	
 	}
 
 	public void AimAtMouse()
@@ -68,8 +64,6 @@ public class DefenderUserController : MonoBehaviour {
 
 			itt++;
 		}
-
-
 	}
 
 	public void ShowDebugLines()
@@ -86,13 +80,13 @@ public class DefenderUserController : MonoBehaviour {
 			Gizmos.DrawRay (def.transform.position, botLine);
 			Gizmos.DrawRay (def.transform.position, topLine);
 		}
-
 	}
 
 	void OnDrawGizmos()
 	{
-		if (showDebugAngles)
+		if (showDebugAngles) {
 			ShowDebugLines ();
+		}
 	}
 
 }

@@ -3,29 +3,22 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 
-	// Use this for initialization
-	private Timer timer;
-	public Spawnable spawn;
-	public GameObject spawnPoint;
-	private Transform spawnTransform;
-	private bool spawning = false;
+	private Transform 	spawnTransform;
+	private bool 		spawning = false;
 
-	public float spawnInterval;
+	public Spawnable 	spawn;
+	public GameObject 	spawnPoint;
+	public float 		spawnInterval;
 
 	void Start () {
-		timer = GetComponent<Timer> ();
 		spawnTransform = spawnPoint.transform;
-		timer.StartTimer (0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-
 		if (!spawning) {
 			StartCoroutine(Spawn());
 		}
-	
 	}
 
 	IEnumerator Spawn() {
