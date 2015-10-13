@@ -13,7 +13,13 @@ public class DefenderUserController : MonoBehaviour {
 	public bool showDebugAim;
 	public bool aiming = true;
 
+	private Quaternion upper;
+	private Quaternion lower;
+
 	void Start () {
+
+		upper = Quaternion.Euler (0, 0, maxTopAngle);
+		lower = Quaternion.Euler (0, 0, minBotAngle);
 	
 	}
 	
@@ -22,6 +28,12 @@ public class DefenderUserController : MonoBehaviour {
 
 		if (aiming) {
 			AimAtMouse();
+		}
+		if (Input.GetMouseButtonDown (0)) {
+			foreach(GameObject go in defenders)
+			{
+				go.GetComponent<Defender>().Fire(go.transform.rotation);
+			}
 		}
 
 	
@@ -33,9 +45,9 @@ public class DefenderUserController : MonoBehaviour {
 		List<Vector3> aimPoints = new List<Vector3> ();
 		Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		Vector3 distance = defenders [0].transform.position - defenders [1].transform.position;
-		Vector3 aimPoint2 = new Vector3 (mousePos.x + Mathf.Abs(distance.x), mousePos.y, mousePos.z);
+		Vector3 aimPoint2 = new Vector3 (mousePos.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
 		distance = defenders [1].transform.position - defenders [2].transform.position;
-		Vector3 aimPoint3 = new Vector3 (aimPoint2.x + Mathf.Abs(distance.x), mousePos.y, mousePos.z);
+		Vector3 aimPoint3 = new Vector3 (aimPoint2.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
 		aimPoints.Add (mousePos);
 		aimPoints.Add (aimPoint2);
 		aimPoints.Add(aimPoint3);
@@ -45,10 +57,10 @@ public class DefenderUserController : MonoBehaviour {
 	
 			float radians = Mathf.Atan2(aimPoints[itt].y - def.transform.position.y,aimPoints[itt].x - def.transform.position.x);
 			float degrees = radians * (180/Mathf.PI);
-			//if (degrees < maxTopAngle) degrees = maxTopAngle;
+
+			//if (Quaternion.Euler(0,0,degrees)< upper) degrees = maxTopAngle;
 			//if (degrees < minBotAngle) degrees = minBotAngle;
-			Debug.Log(degrees);
-			def.transform.localRotation = Quaternion.Euler(0, 0, degrees);
+			def.transform.rotation = Quaternion.Euler(0, 0, degrees);
 			if (showDebugAim)
 			{
 				Debug.DrawRay(def.transform.position, def.transform.right,Color.green);
