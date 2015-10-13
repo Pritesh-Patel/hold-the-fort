@@ -165,7 +165,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492649713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.8800001, y: -1.37, z: 0}
+  m_LocalPosition: {x: -11.8800001, y: -3.36999989, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -259,6 +259,11 @@ Prefab:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 492649713}
+    - target: {fileID: 11419136, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 11430360, guid: 4925fe9bcf1594ef0ab309bcf348cc8b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
   m_IsPrefabParent: 0
@@ -343,6 +348,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 126814, guid: 34753fa346f45412d863df668179acf5, type: 2}
+      propertyPath: m_TagString
+      value: Turret
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34753fa346f45412d863df668179acf5, type: 2}
   m_IsPrefabParent: 0
@@ -392,6 +401,10 @@ Prefab:
     - target: {fileID: 475834, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.00998783
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833486, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f327cd69956794042be5cae70a8a1d66, type: 2}
