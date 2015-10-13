@@ -18,7 +18,7 @@ public class Defender : MonoBehaviour {
 	public void Fire(Quaternion angle)
 	{
 		GameObject go = Instantiate(projectile,this.transform.position,angle) as GameObject;
-		go.GetComponent<Rigidbody2D> ().AddRelativeForce (new Vector2 (380, 0));
+		go.GetComponent<Rigidbody2D> ().AddRelativeForce (new Vector2 (680, 0));
 		       
 	}
 }

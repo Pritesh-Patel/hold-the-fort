@@ -259,6 +259,11 @@ Prefab:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 492649713}
+    - target: {fileID: 11419136, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 11411024, guid: 4925fe9bcf1594ef0ab309bcf348cc8b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be213837456d0ec41b71d1d2e5ff316d, type: 2}
   m_IsPrefabParent: 0
@@ -481,6 +486,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11494966, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9975fdb1b532a4c41a1910ab68a93452, type: 2}
   m_IsPrefabParent: 0
@@ -573,6 +582,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11469476, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b15808bd40c034ff4863cf85fac080b0, type: 2}
   m_IsPrefabParent: 0
