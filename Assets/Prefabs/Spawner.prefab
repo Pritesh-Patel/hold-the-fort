@@ -40,9 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d318714956384844a20d4a71a1aae53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 11411024, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
+  spawn: {fileID: 11430360, guid: 4925fe9bcf1594ef0ab309bcf348cc8b, type: 2}
   spawnPoint: {fileID: 0}
-  spawnTransform: {fileID: 0}
   spawnInterval: 3
 --- !u!114 &11470766
 MonoBehaviour:

@@ -11,7 +11,8 @@ GameObject:
   - 212: {fileID: 21206452}
   - 61: {fileID: 6103008}
   - 114: {fileID: 11435490}
-  m_Layer: 0
+  - 114: {fileID: 11465580}
+  m_Layer: 10
   m_Name: TurretMiddle
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -56,6 +57,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 0
+--- !u!114 &11465580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  finalTurret: 0
 --- !u!212 &21206452
 SpriteRenderer:
   m_ObjectHideFlags: 1

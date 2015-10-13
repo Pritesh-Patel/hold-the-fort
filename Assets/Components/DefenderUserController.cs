@@ -6,25 +6,20 @@ public class DefenderUserController : MonoBehaviour {
 
 	// Use this for initialization
 	public List<GameObject> defenders;
-	public float maxTopAngle;
-	public float minBotAngle;
-	public float projectileDistance;
-	public bool showDebugAngles;
-	public bool showDebugAim;
-	public bool aiming = true;
+	public float 			maxTopAngle;
+	public float 			minBotAngle;
+	public float 			projectileDistance;
+	public bool 			showDebugAngles;
+	public bool 			showDebugAim;
+	public bool 			aiming = true;
 
-	void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
-	void Update () {
-
+	void Update ()
+	{
 		if (aiming) {
 			AimAtMouse();
 		}
-
-	
 	}
 
 	public void AimAtMouse()
@@ -55,8 +50,6 @@ public class DefenderUserController : MonoBehaviour {
 
 			itt++;
 		}
-
-
 	}
 
 	public void ShowDebugLines()
@@ -73,13 +66,13 @@ public class DefenderUserController : MonoBehaviour {
 			Gizmos.DrawRay (def.transform.position, botLine);
 			Gizmos.DrawRay (def.transform.position, topLine);
 		}
-
 	}
 
 	void OnDrawGizmos()
 	{
-		if (showDebugAngles)
+		if (showDebugAngles) {
 			ShowDebugLines ();
+		}
 	}
 
 }

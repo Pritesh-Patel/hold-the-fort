@@ -11,7 +11,6 @@ public class AttackerAIControl : MonoBehaviour
         attacker = GetComponent<Attacker>();
     }
 
-
     private void FixedUpdate()
     {
         attacker.Move(0.7f);

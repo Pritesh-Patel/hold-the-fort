@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class Timer : MonoBehaviour {
-	
-	public float currTime = 0;
 
 	private bool started = false;
+
+	public float currTime = 0;
 
 	void Update () {	
 		if (started) currTime += Time.time;
