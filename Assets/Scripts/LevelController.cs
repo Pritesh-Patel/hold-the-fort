@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class LevelController : MonoBehaviour {
 
 	// Use this for initialization
-	private Dictionary<string,int> keepTrackOf;
+	private Dictionary<string,int> keepTrackOf = new Dictionary<string,int>();
 
 	void Start () {
 		DontDestroyOnLoad (gameObject);
