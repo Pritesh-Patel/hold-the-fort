@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class LevelController : MonoBehaviour {
 
 	// Use this for initialization
-	private Dictionary<string,int> keepTrackOf = new Dictionary<string,int>();
+	private Dictionary<string,int> keepTrackOf = new Dictionary<string,float>();
 
 	void Start () {
 		DontDestroyOnLoad (gameObject);
@@ -33,12 +33,11 @@ public class LevelController : MonoBehaviour {
 			case ELevel.Level2:
 			{
 				Debug.Log ("In Level 2");
-			break;
+				break;
 					
 			}
-
-
 		}
+		PostLevelLoadActions ();
 
 	}
 
@@ -48,14 +47,15 @@ public class LevelController : MonoBehaviour {
 
 	void PreLevelLoadActions()
 	{
-		ResetLevelScene ();
+		Debug.Log ("Loading new scene");
 	}
 
 	void PostLevelLoadActions()
 	{
+		Debug.Log ("Finnished loading level");
 	}
 
-	public void Add(string s, int i)
+	public void Add(string s, float i)
 	{
 		keepTrackOf [s] = i;
 	}
