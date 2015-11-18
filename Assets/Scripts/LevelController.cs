@@ -57,7 +57,7 @@ public class LevelController : MonoBehaviour {
 
 	public void Add(string s, float i)
 	{
-		keepTrackOf [s] = i;
+		keepTrackOf[s] =  keepTrackOf [s] + i;
 	}
 
 	public void Subtract(string s, int i)

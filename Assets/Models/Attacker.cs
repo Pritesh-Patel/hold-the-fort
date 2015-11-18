@@ -31,6 +31,9 @@ public class Attacker : Spawnable
 		if (health.currentHealth <= 0) {
 			Debug.Log ("Attacker dead");
 			//Add coins to GameController
+			GameObject.Find("LevelController").GetComponent<LevelController>().Add("score",10);
+			float score = GameObject.Find("LevelController").GetComponent<LevelController>().GetTrackedValue("score");
+			Debug.Log(score);
 			Destroy(gameObject);
 		}
 	}
