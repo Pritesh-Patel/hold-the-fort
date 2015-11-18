@@ -39,10 +39,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be72b8af870be9949a662e667710130e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   maxTopAngle: 100
   minBotAngle: -150
   projectileDistance: -1

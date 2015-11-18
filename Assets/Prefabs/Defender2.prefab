@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11494966}
   m_Layer: 0
   m_Name: Defender2
-  m_TagString: Untagged
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa518d4e2e7e14f41bb947b7fbb1e21d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 135374, guid: 2be95b2847063d341a62e0c0ef68397b, type: 2}
 --- !u!212 &21211372
 SpriteRenderer:
   m_ObjectHideFlags: 1

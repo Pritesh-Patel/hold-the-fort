@@ -11,9 +11,10 @@ GameObject:
   - 212: {fileID: 21223168}
   - 61: {fileID: 6115278}
   - 114: {fileID: 11448656}
-  m_Layer: 0
+  - 114: {fileID: 11419774}
+  m_Layer: 10
   m_Name: TurretLower
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.53999996, y: -2.92000008, z: 0}
+  m_LocalPosition: {x: 5.53999996, y: -4.23999977, z: 0}
   m_LocalScale: {x: .744790375, y: .744790375, z: .744790375}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,6 +44,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 3, y: 6}
+--- !u!114 &11419774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc54109e1504540a6a856a983bf1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalTurret: 0
+  turretDefender: {fileID: 0}
 --- !u!114 &11448656
 MonoBehaviour:
   m_ObjectHideFlags: 1
