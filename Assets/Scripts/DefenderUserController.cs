@@ -37,21 +37,11 @@ public class DefenderUserController : MonoBehaviour {
 	public void AimAtMouse()
 	{
 		GameObject[] defenders = GameObject.FindGameObjectsWithTag("Defender");
-		//accounts for the difference in defender postions
-		List<Vector3> aimPoints = new List<Vector3> ();
 		Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector3 distance = defenders[0].transform.position - defenders[1].transform.position;
-		Vector3 aimPoint2 = new Vector3 (mousePos.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
-		distance = defenders [1].transform.position - defenders [2].transform.position;
-		Vector3 aimPoint3 = new Vector3 (aimPoint2.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
-		aimPoints.Add (mousePos);
-		aimPoints.Add (aimPoint2);
-		aimPoints.Add(aimPoint3);
 
-		int itt = 0;
 		foreach (GameObject def in defenders) {
-	
-			float radians = Mathf.Atan2(aimPoints[itt].y - def.transform.position.y,aimPoints[itt].x - def.transform.position.x);
+
+			float radians = Mathf.Atan2(mousePos.y,mousePos.x);
 			float degrees = radians * (180/Mathf.PI);
 
 			//if (Quaternion.Euler(0,0,degrees)< upper) degrees = maxTopAngle;
@@ -61,8 +51,6 @@ public class DefenderUserController : MonoBehaviour {
 			{
 				Debug.DrawRay(def.transform.position, def.transform.right,Color.green);
 			}
-
-			itt++;
 		}
 	}
 

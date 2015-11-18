@@ -13,11 +13,12 @@ public class Arrow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-		this.transform.right =
-			Vector3.Slerp(this.transform.right, rigid.velocity.normalized, Time.deltaTime);
-	
+	void Update () 
+	{
+		
+		Vector3 dir = rigid.velocity;
+		float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.AngleAxis (angle, Vector3.forward);
 	}
 
 	void OnCollisionEnter2D(Collision2D col)
