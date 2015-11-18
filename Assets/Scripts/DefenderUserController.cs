@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class DefenderUserController : MonoBehaviour {
 
 	// Use this for initialization
-	public List<GameObject> defenders;
 	public float 			maxTopAngle;
 	public float 			minBotAngle;
 	public float 			projectileDistance;
@@ -28,7 +27,7 @@ public class DefenderUserController : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButtonDown (0)) {
-			foreach(GameObject go in defenders)
+			foreach(GameObject go in GameObject.FindGameObjectsWithTag("Defender"))
 			{
 				go.GetComponent<Defender>().Fire(go.transform.rotation);
 			}
@@ -37,10 +36,11 @@ public class DefenderUserController : MonoBehaviour {
 
 	public void AimAtMouse()
 	{
+		GameObject[] defenders = GameObject.FindGameObjectsWithTag("Defender");
 		//accounts for the difference in defender postions
 		List<Vector3> aimPoints = new List<Vector3> ();
 		Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector3 distance = defenders [0].transform.position - defenders [1].transform.position;
+		Vector3 distance = defenders[0].transform.position - defenders[1].transform.position;
 		Vector3 aimPoint2 = new Vector3 (mousePos.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
 		distance = defenders [1].transform.position - defenders [2].transform.position;
 		Vector3 aimPoint3 = new Vector3 (aimPoint2.x + Mathf.Abs(distance.x), mousePos.y + Mathf.Abs (distance.y), mousePos.z);
@@ -68,7 +68,7 @@ public class DefenderUserController : MonoBehaviour {
 
 	public void ShowDebugLines()
 	{
-		foreach (GameObject def in defenders) {
+		foreach (GameObject def in GameObject.FindGameObjectsWithTag("Defender")) {
 
 			Quaternion rotMin = Quaternion.AngleAxis (minBotAngle, Vector3.forward);
 			Quaternion rotMax = Quaternion.AngleAxis (maxTopAngle, Vector3.forward);
