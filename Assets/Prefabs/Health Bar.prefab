@@ -202,7 +202,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 397517487
   m_SortingOrder: 0
 --- !u!224 &22412784
 RectTransform:
@@ -255,7 +255,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 9.22000027, y: .860000014}
+  m_AnchoredPosition: {x: .219999999, y: -2.52999997}
   m_SizeDelta: {x: 3, y: 1}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22496994
