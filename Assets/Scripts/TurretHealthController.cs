@@ -4,27 +4,21 @@ using System.Collections;
 public class TurretHealthController : MonoBehaviour {
 
 	public float max_Health = 100f;
-	public float current_Health = 0f;
 	public GameObject healthBar;
 
 	// Use this for initialization
 	void Start () {
-		current_Health = max_Health;
-		InvokeRepeating ("decreaseHealth", 1f, 1f);
+		max_Health = gameObject.GetComponentInParent<Health> ().maxHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		decreaseHealth();
 	}
 
 	void decreaseHealth() {
-		current_Health -= 2f;
+		float current_Health = gameObject.GetComponentInParent<Health> ().currentHealth;
 		float calculate_Health = current_Health / max_Health;
-		setHealthBar (calculate_Health);
-	}
-
-	public void setHealthBar(float myHealth) {
-		healthBar.transform.localScale = new Vector3 (myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+		healthBar.transform.localScale = new Vector3 (calculate_Health, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
 	}
 }
